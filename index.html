@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <script src="axios.js"></script>
+    <style>
+        .error{
+            border: 1px solid red;
+        }
+        .success{
+             border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <form action="./progress.json">
+        <label> ФИО <div><input type="text" name="fio"></div></label>
+        <label> e-mail <div><input type="email" name="email"></div></label>
+        <label> Телефон <div><input type="text" name="phone"></div></label>
+    </form>
+    <button id="submitButton">Отправить</button>
+    <div id="resultContainer"></div>
+    <script src="index.js"></script>
+</body>
+</html>
